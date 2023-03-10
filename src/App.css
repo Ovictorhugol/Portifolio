@@ -1,0 +1,13 @@
+.App {
+  background-color: #f9f9f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.dark-theme {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #333;
+}

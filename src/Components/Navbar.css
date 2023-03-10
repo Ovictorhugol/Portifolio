@@ -1,0 +1,36 @@
+* {
+  color: black;
+}
+.Navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d46ab4;
+}
+.Menu {
+  list-style-type: none;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+.dark-theme li {
+  color: #d46ab4;
+}
+.Menu li {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Menu li:hover {
+  color: #d46ab4;
+  cursor: pointer;
+}
+.dark-theme li:hover {
+  color: #fff;
+  cursor: pointer;
+}

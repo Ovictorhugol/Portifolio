@@ -1,0 +1,36 @@
+.Resume {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  padding: 0 5vw;
+  justify-content: space-around;
+}
+.dark-theme-resume p {
+  color: white;
+}
+.Resume p {
+  width: 40vw;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+.ResumeTextIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.IconsMenu {
+  display: flex;
+  justify-content: flex-start;
+}
+.Icons {
+  margin: 20px 20px 0 0;
+}
+.Image {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 26px;
+  pointer-events: none;
+  box-shadow: 12px -12px #d46ab4;
+}

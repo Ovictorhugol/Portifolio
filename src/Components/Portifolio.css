@@ -1,0 +1,8 @@
+.Portifolio {
+  height: 50vh;
+  font-family: "Roboto", sans-serif;
+}
+.Projects {
+  display: flex;
+  justify-content: space-around;
+}
