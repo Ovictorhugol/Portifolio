@@ -1,8 +1,67 @@
 .Portifolio {
   height: 50vh;
-  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.portifolioTitle {
+  color: black;
+  margin-left: 5vw;
+  margin-bottom: 1rem;
+}
+.title {
+  border-bottom: 1px solid;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-bottom: 3rem;
+}
+.dark-theme-portifolioTitle {
+  font-size: 2rem;
+  margin-left: 10vw;
+  color: white;
+
+  margin-bottom: 1rem;
 }
 .Projects {
   display: flex;
+  width: 100%;
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+
+  width: 30vw;
+  height: 30vh;
   justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1.5vw 1rem 1.5vw;
+}
+.Project:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.projectImage {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .Projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Project {
+    width: 80vw;
+    height: 40vh;
+    margin: 1rem 0 1rem 0;
+  }
+  .projectImage {
+    width: 80vw;
+    height: 40vh;
+  }
 }

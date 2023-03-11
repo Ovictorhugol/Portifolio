@@ -2,9 +2,10 @@ import "./App.css";
 import Navbar from "./Components/Navbar.jsx";
 import Resume from "./Components/Resume.jsx";
 import Portifolio from "./Components/Portifolio";
+import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
 import { ThemeContext } from "./context/ThemeContext.jsx";
 import { useContext } from "react";
-
 function App() {
   const { theme } = useContext(ThemeContext);
 
@@ -13,6 +14,8 @@ function App() {
       <Navbar />
       <Resume />
       <Portifolio />
+      <Experience />
+      <Footer />
     </div>
   );
 }

@@ -11,7 +11,8 @@
 .Resume p {
   width: 40vw;
   text-align: justify;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+
   font-size: 1.2em;
   line-height: 1.3em;
 }
@@ -33,4 +34,20 @@
   border-radius: 26px;
   pointer-events: none;
   box-shadow: 12px -12px #d46ab4;
+}
+
+@media (max-width: 768px) {
+  .Resume {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .Resume p {
+    width: 80vw;
+  }
+  .Image {
+    display: none;
+  }
+  .ResumeTextIcons {
+    margin-top: 20px;
+  }
 }

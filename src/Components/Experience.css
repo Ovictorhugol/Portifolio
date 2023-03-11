@@ -1,0 +1,73 @@
+.Body {
+  margin-top: 7.5rem;
+}
+.titleExperience {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+  margin-left: 10vw;
+}
+
+.dark-theme-titleExperience {
+  color: white;
+}
+.Experience {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.ExperienceList {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  padding: 1rem;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Roboto Mono", monospace;
+}
+
+.dark-theme-experienceList {
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+}
+.ExperienceName {
+  font-weight: 700;
+}
+.ExperienceDate {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.ExperienceListMenu {
+  margin-top: 1rem;
+}
+.ExperienceListMenuItem {
+  margin-bottom: 1rem;
+}
+
+.dark-theme-experience {
+  color: white;
+}
+.dark-theme {
+  color: white;
+}
+.Company {
+  font-weight: 500;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  padding: 0.5rem;
+  background-color: #d46ab4;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .Body {
+    margin-top: 40rem;
+  }
+}

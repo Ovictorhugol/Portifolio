@@ -9,20 +9,48 @@ function Navbar() {
 
   return (
     <div className="Navbar">
-      <ul className={`Menu ${theme === "dark" ? ~"dark-theme" : ""}`}>
-        <li onClick={() => console.log("I'm working")}>About Me</li>
-        <li onClick={() => console.log("I'm working")}>Portifolio</li>
-        <li onClick={() => console.log("I'm working")}>Experience</li>
-        <li onClick={() => console.log("I'm working")}>Contact</li>
+      <ul className={`Menu ${theme === "dark" ? "dark-theme-menu" : ""}`}>
+        <li
+          className={`menuItem ${
+            theme === "dark" ? "dark-theme-menuItem" : ""
+          }`}
+          onClick={() => console.log("I'm working")}
+        >
+          Sobre
+        </li>
+        <li
+          className={`menuItem ${
+            theme === "dark" ? "dark-theme-menuItem" : ""
+          }`}
+          onClick={() => console.log("I'm working")}
+        >
+          Portifolio
+        </li>
+        <li
+          className={`menuItem ${
+            theme === "dark" ? "dark-theme-menuItem" : ""
+          }`}
+          onClick={() => console.log("I'm working")}
+        >
+          Experiência
+        </li>
+        {/* <li
+          className={`menuItem ${
+            theme === "dark" ? "dark-theme-menuItem" : ""
+          }`}
+          onClick={() => console.log("I'm working")}
+        >
+          Contato
+        </li> */}
       </ul>
 
-      <div>
+      <div className="buttonSwitch">
         <ReactSwitch
           onChange={toggleTheme}
           checked={theme === "dark"}
           onColor={"#d46ab4"}
           offColor={"#c2c2c2"}
-          uncheckedIcon={<img src={Moon} middle height="95%" width="90%"></img>}
+          uncheckedIcon={<img src={Moon} height="95%" width="90%"></img>}
           checkedIcon={<img src={Sun} height="95%" width="95%"></img>}
         />
       </div>

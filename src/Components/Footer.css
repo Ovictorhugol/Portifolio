@@ -1,0 +1,31 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.footerButton {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.footerButton:hover {
+  background-color: #d46ab4;
+}
+
+.dark-theme-footer {
+  color: white;
+}
+.dark-theme-footerName {
+  color: white;
+}
+
+.dark-theme-footerButton {
+  border: 1px solid white;
+}
