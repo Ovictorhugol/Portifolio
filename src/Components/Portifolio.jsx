@@ -7,7 +7,7 @@ import "./Portifolio.css";
 function Portifolio() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="Portifolio">
+    <div className="Portifolio" id="Portifolio">
       <div className="title">
         <h1
           className={`portifolioTitle  ${

@@ -6,7 +6,10 @@ import Photo from "../assets/photo.png";
 function Resume() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className={`Resume ${theme === "dark" ? "dark-theme-resume" : ""}`}>
+    <div
+      id="Resume"
+      className={`Resume ${theme === "dark" ? "dark-theme-resume" : ""}`}
+    >
       <div className="ResumeTextIcons">
         <p>
           Oi meu nome é Victor Hugo sou recém formado em Ciência da Computação

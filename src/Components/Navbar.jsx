@@ -4,36 +4,43 @@ import { ThemeContext } from "../context/ThemeContext";
 import "./Navbar.css";
 import Moon from "../assets/moon.svg";
 import Sun from "../assets/sun.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="Navbar">
+    <div className={`Navbar ${theme === "dark" ? "dark-theme-navbar" : ""}`}>
       <ul className={`Menu ${theme === "dark" ? "dark-theme-menu" : ""}`}>
-        <li
-          className={`menuItem ${
-            theme === "dark" ? "dark-theme-menuItem" : ""
-          }`}
-          onClick={() => console.log("I'm working")}
-        >
-          Sobre
-        </li>
-        <li
-          className={`menuItem ${
-            theme === "dark" ? "dark-theme-menuItem" : ""
-          }`}
-          onClick={() => console.log("I'm working")}
-        >
-          Portifolio
-        </li>
-        <li
-          className={`menuItem ${
-            theme === "dark" ? "dark-theme-menuItem" : ""
-          }`}
-          onClick={() => console.log("I'm working")}
-        >
-          Experiência
-        </li>
+        <AnchorLink href="#Resume">
+          <li
+            className={`menuItem ${
+              theme === "dark" ? "dark-theme-menuItem" : ""
+            }`}
+            onClick={() => console.log("I'm working")}
+          >
+            Sobre
+          </li>
+        </AnchorLink>
+        <AnchorLink href="#Portifolio" offset="150">
+          <li
+            className={`menuItem ${
+              theme === "dark" ? "dark-theme-menuItem" : ""
+            }`}
+            onClick={() => console.log("I'm working")}
+          >
+            Portifolio
+          </li>
+        </AnchorLink>
+        <AnchorLink href="#Experience">
+          <li
+            className={`menuItem ${
+              theme === "dark" ? "dark-theme-menuItem" : ""
+            }`}
+            onClick={() => console.log("I'm working")}
+          >
+            Experiência
+          </li>
+        </AnchorLink>
         {/* <li
           className={`menuItem ${
             theme === "dark" ? "dark-theme-menuItem" : ""
